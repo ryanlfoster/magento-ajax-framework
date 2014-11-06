@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+
+    <!-- Page template for AJAX requests -->
+    <ajax_response translate="label">
+        <label>All AJAX Responses</label>
+        <block type="page/html" name="ajax.response.blocks" template="page/empty.phtml">
+            <block type="core/messages" name="global_messages" as="global_messages"/>
+            <block type="core/messages" name="messages" as="messages"/>
+        </block>
+    </ajax_response>
+
+    <!-- Required files for running AJAX calls -->
+    <ajax_request>
+        <reference name="head">
+            <action method="addJs">
+                <file>ecommotion/ajax/base.js</file>
+            </action>
+
+            <action method="addItem">
+                <type>skin_css</type>
+                <file>css/ecommotion/ajax/base.css</file>
+            </action>
+        </reference>
+    </ajax_request>
+</layout>

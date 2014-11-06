@@ -1,0 +1,15 @@
+{
+    "name": "ecommotion/ajax-framework",
+    "license": "OSL-3.0",
+    "type": "magento-module",
+    "description": "An efficient, flexible, event-based AJAX framework for Magento.",
+    "require": {
+        "magento-hackathon/magento-composer-installer": "*"
+    },
+    "authors":[
+        {
+            "name":"eCommotion",
+            "email":"info@ecommotion.net"
+        }
+    ]
+}

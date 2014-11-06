@@ -1,0 +1,9 @@
+src/app/code/community/Ecommotion/Ajax                                  app/code/community/Ecommotion/Ajax
+src/app/etc/modules/*                                                   app/etc/modules/
+
+src/app/design/frontend/base/default/layout/ecommotion/ajax/*           app/design/frontend/base/default/layout/ecommotion/ajax/
+
+src/js/ecommotion/ajax/                                                 js/ecommotion/ajax/
+
+src/skin/frontend/default/default/css/ecommotion/ajax/*                 skin/frontend/default/default/css/ecommotion/ajax/
+src/skin/frontend/rwd/default/css/ecommotion/ajax/*                     skin/frontend/rwd/default/css/ecommotion/ajax/

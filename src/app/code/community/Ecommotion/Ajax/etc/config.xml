@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Ecommotion_Ajax>
+            <version>0.1.1</version>
+        </Ecommotion_Ajax>
+    </modules>
+    <global>
+        <blocks>
+            <ecommotion_ajax>
+                <class>Ecommotion_Ajax_Block</class>
+            </ecommotion_ajax>
+        </blocks>
+        <helpers>
+            <ecommotion_ajax>
+                <class>Ecommotion_Ajax_Helper</class>
+            </ecommotion_ajax>
+        </helpers>
+        <models>
+            <ecommotion_ajax>
+                <class>Ecommotion_Ajax_Model</class>
+            </ecommotion_ajax>
+        </models>
+    </global>
+    <frontend>
+        <layout>
+            <updates>
+                <ecommotion_ajax>
+                    <file>ecommotion/ajax/base.xml</file>
+                </ecommotion_ajax>
+            </updates>
+        </layout>
+    </frontend>
+</config>

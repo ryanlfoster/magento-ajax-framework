@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Ecommotion_Ajax>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Ecommotion_Ajax>
+    </modules>
+</config>
