@@ -19,7 +19,7 @@ Table of contents
 * [Known issues](#known-issues)
 * [Support](#support)
 * [Contributing](#contributing)
-* [Copyright and license](#copyright-and-license)
+* [Copyright and licence](#copyright-and-licence)
 
 
 Installation
@@ -29,7 +29,7 @@ Installation
 2. Install the [Magento Composer installer](https://github.com/magento-hackathon/magento-composer-installer)
 3. Add the following to your project's `composer.json`  
 
-```
+```js
 {
     ...
     "require": {
@@ -91,7 +91,7 @@ In order to keep it short, we will assume the following:
 1. You have a javascript file in your skin that you can add to
 2. All javascript code mentioned below should be wrapped in a document loaded observer:  
 
-```
+```javascript
   Event.observe(document, 'dom:loaded', function(event) {
     ...
   });
@@ -101,7 +101,7 @@ In order to keep it short, we will assume the following:
 ###Create the dispatcher
 Create a dispatcher for the "Vote" button in the sidebar Poll block. Add the following to your scripts file:
 
-```
+```javascript
   Mage.Ajax.debug = true;
 
   var pollDispatcher = new Mage.Ajax.View.Dispatcher({
@@ -115,7 +115,7 @@ This will listen for click events on the "Vote" button and dispatch an event cal
 ###Create the handler
 Add the following code to your javascript file:
 
-```
+```javascript
   var pollHandler = new Mage.Ajax.View.Handler({
     events: {
       onSuccess: ['submitPoll']
