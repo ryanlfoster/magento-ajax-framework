@@ -4,15 +4,16 @@ Magento Ajax Framework
 
 An efficient, flexible, event-based AJAX framework for Magento. eCommotion's AJAX framework uses namespaced Javascript events in order to provide a flexible way of listening for certain AJAX calls and updating multiple frontend elements at once.
 
-
+Simple AJAX requests can easily be done using Prototype or jQuery. This framework is for more complicated AJAX frontends that require multiple independent DOM updates.
 
 Compatibility
 -------------
 - **CE:** 1.6, 1.7, 1.8, 1.9
-- **EE:** 1.11, 1.12, 1.13, 1.14
+- **EE:** 1.12, 1.13, 1.14
 
 Table of contents
 -----------------
+* [Features](#features)
 * [Installation](#installation)
 * [Key concepts](#key-concepts)
 * [Crash course](#crash-course)
@@ -21,6 +22,20 @@ Table of contents
 * [Contributing](#contributing)
 * [Copyright and licence](#copyright-and-licence)
 
+
+Features
+--------
+**Events**  
+Automatically dispatches namespaced events for every AJAX call  
+
+**Built in javascript classes**  
+For dispatching and handling events  
+
+**Observers**   
+Re-route controller actions to AJAX versions  
+
+**Improved performance**  
+Use layout handles to specify which blocks to return in the AJAX response, avoiding loading an entire page.
 
 Installation
 -------------------------
