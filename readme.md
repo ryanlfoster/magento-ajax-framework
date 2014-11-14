@@ -147,7 +147,7 @@ The `events` object sets up which events the handler should listen for. In this 
 Our `onSuccess` method updates the poll block with a "thank you" message.
 
 ###Further reading
-This has been a very basic example of what the AJAX framework is capable of. For more documentation and examples please visit the wiki.
+This has been a very basic example of what the AJAX framework is capable of. For more documentation and examples please visit [the wiki](https://ecommotion.atlassian.net/wiki/display/AJAX/AJAX+Framework).
 
 
 Known issues
