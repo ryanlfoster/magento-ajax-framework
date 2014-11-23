@@ -44,11 +44,11 @@ Installation
 2. Install the [Magento Composer installer](https://github.com/magento-hackathon/magento-composer-installer)
 3. Add the following to your project's `composer.json`  
 
-```js
+```javascript
 {
     ...
     "require": {
-        "ecommotion/ajax-framework":"dev-master"
+        "ecommotion/magento-ajax-framework":"dev-master"
         ...
     },
     "repositories": [
@@ -119,7 +119,7 @@ Create a dispatcher for the "Vote" button in the sidebar Poll block. Add the fol
 ```javascript
   Mage.Ajax.debug = true;
 
-  var pollDispatcher = new Mage.Ajax.View.Dispatcher({
+  var pollDispatcher = new Mage.Ajax.Dispatcher({
     selector: '.block-poll .actions .button',
     dispatchEvent: 'submitPoll'
   });
@@ -131,7 +131,7 @@ This will listen for click events on the "Vote" button and dispatch an event cal
 Add the following code to your javascript file:
 
 ```javascript
-  var pollHandler = new Mage.Ajax.View.Handler({
+  var pollHandler = new Mage.Ajax.Handler({
     events: {
       onSuccess: ['submitPoll']
     },

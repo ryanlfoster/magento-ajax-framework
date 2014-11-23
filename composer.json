@@ -1,5 +1,5 @@
 {
-    "name": "ecommotion/ajax-framework",
+    "name": "ecommotion/magento-ajax-framework",
     "license": "OSL-3.0",
     "type": "magento-module",
     "description": "An efficient, flexible, event-based AJAX framework for Magento.",

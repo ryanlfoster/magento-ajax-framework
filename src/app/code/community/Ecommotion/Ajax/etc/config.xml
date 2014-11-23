@@ -2,7 +2,7 @@
 <config>
     <modules>
         <Ecommotion_Ajax>
-            <version>0.1.1</version>
+            <version>0.2.0</version>
         </Ecommotion_Ajax>
     </modules>
     <global>

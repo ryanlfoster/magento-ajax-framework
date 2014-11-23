@@ -71,6 +71,7 @@ Mage.Ajax.Request = Class.create(Ajax.Request, {
   }
 });
 
+
 /**
  * Abstract AJAX event dispatcher
  *
@@ -83,7 +84,7 @@ Mage.Ajax.Request = Class.create(Ajax.Request, {
  *  - data-ajax-event
  *
  */
-Mage.Ajax.View.Dispatcher = Class.create({
+Mage.Ajax.Dispatcher = Class.create({
   initialize: function() {
 
     var options = Object.extend({
@@ -188,7 +189,7 @@ Mage.Ajax.View.Dispatcher = Class.create({
   }
 });
 
-Mage.Ajax.View.Handler = Class.create({
+Mage.Ajax.Handler = Class.create({
   statuses: ['onLoading', 'onLoaded', 'onSuccess', 'onFailure'],
   initialize: function(options) {
     this.events = {};
@@ -233,18 +234,11 @@ Mage.Ajax.View.Handler = Class.create({
     }
 
     return false;
-  },
-  updateContent: function(receiver, responseText, evalScripts) {
-
-    if (!evalScripts) responseText = responseText.stripScripts();
-
-    receiver.replace(responseText);
-
   }
 });
 
 
-Mage.Ajax.View.Modal = Class.create({
+Mage.Ajax.Modal = Class.create({
   defaultTemplate:
     '<div id="#{id}" class="modal fade"> \
       <div class="modal-dialog"> \
